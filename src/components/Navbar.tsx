@@ -1,6 +1,6 @@
 'use client';
 
-import { useSession } from 'next-auth/react'; // v5 compatible
+import { useSession } from 'next-auth/react';
 import { usePathname } from 'next/navigation';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { BoxArrowRight, Lock, PersonFill, PersonPlusFill } from 'react-bootstrap-icons';
@@ -24,7 +24,7 @@ const NavBar: React.FC = () => {
                   Add Stuff
                 </Nav.Link>
                 <Nav.Link id="list-stuff-nav" href="/list" active={pathName === '/list'}>
-                  List Stuff
+                  List Contacts
                 </Nav.Link>
               </>
             )}
